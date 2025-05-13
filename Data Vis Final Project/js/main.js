@@ -2,7 +2,7 @@ let stackedBarChart, data
 /**
  * Load data from food_arregated.csv
  */
-d3.csv('data/food_aggregated.csv')
+d3.csv('data/food_aggregated-2.csv')
   .then(_data => {
     _data.forEach(d => {
       d.total = +d.total;
