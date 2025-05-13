@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World Top Street Food</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+   
+	<h1> World Top Street Food </h1>
+    <p> The following data visualizations show the world's top street foods. <br> 
+        You can use your mouse or keyboard to explore the visualization.</p>
+    <a href="https://www.kaggle.com/datasets/olearoy/fully-cleaned-street-food-dataset?resource=download">Data source (kaggle)</a>
+
+    <main id="main" tabindex="-1">
+
+    <h3>Map of street food by origin</h3>
+    <p>Hover over each region to explore what street food are from there!</p>
+    <div class="worldmap" role="img" aria-labelledby="map-desc"></div>
+    <p id="map-desc" class="visually-hidden">
+    Choropleth map of world-wide food popularity:
+    Colored regions mean at least one popular street food is from here.
+    You can hover over to see specific food information.
+    </p>
+
+    <h3>Street food breakdown by continents</h3>
+    <p>Use the drop down list to explore different filters! You can hover over the bars to learn more.</p>
+    <div class="user-control">
+        <select id="food-category" class="form-control">
+          <option value="total">Total Count</option>
+          <option value="hot-cold">View by Hot and Cold</option>
+          <option value="dish-type">View by Dish Types</option>
+        </select>
+    </div>
+    <div id="barchart-container" style="position: relative;">
+        <div id="barchart" role="img" aria-labelledby="bar-desc"></div>
+        <p id="bar-desc" class="visually-hidden">
+        Stacked bar chart showing total, hot, cold, and dessert food counts
+        by category (2010–2023).  Use the arrow keys to inspect each bar.
+        </p>
+    </div>
+    
+    </main>
+
+    <!-- D3 bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/choropleth.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

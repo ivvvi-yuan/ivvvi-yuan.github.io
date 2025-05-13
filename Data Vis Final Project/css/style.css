@@ -1,0 +1,92 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    background-color:#fafafa;
+    padding-left: 100px;
+}
+
+.skip-link{
+    position:absolute; left:-9999px; top:0;
+    padding:8px 12px; background:#000; color:#fff; z-index:1000;
+    }
+    .skip-link:focus{ left:0; } 
+
+#food-category{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.axis{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+
+
+.cat-cold rect {
+    fill: #85d0f3;
+  }
+.cat-hot rect {
+    fill: #c93623;
+  }
+
+.cat-total rect {
+    fill: #6f7580;
+  }
+
+.cat-sideDish rect {
+    fill: #3fe861fe;
+  }
+
+.cat-mainCourse rect {
+    fill: #7a3908;
+  }
+
+.cat-dessert rect {
+    fill: #fd79b3;
+  }
+
+.cat-snacks rect {
+    fill: #fffb00;
+  }
+
+.cat-drink rect {
+    fill: #62d1f9;
+  }
+
+.axis-title {
+    font-size: 14px;
+    font-weight: bold;
+    fill: #333;
+}
+
+.visually-hidden{
+  position:absolute;
+  left:-10000px;
+  width:1px; height:1px;
+  overflow:hidden;          
+}
+
+.tooltip{
+  position:absolute;
+  padding:6px;
+  background:#fff;
+  border:1px solid #999;
+  border-radius:4px;
+  font-size:12px;
+  pointer-events:none;
+  opacity:0;
+}
+
+.tooltipbar {
+  position: absolute;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 4px;
+  pointer-events: none;
+  font-size: 12px;
+  font-family: sans-serif;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 10;
+}
