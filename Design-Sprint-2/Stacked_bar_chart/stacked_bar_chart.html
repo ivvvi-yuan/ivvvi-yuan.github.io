@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify Subscription Type by Gender</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    const spec = {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "description": "Stacked bar chart example: categories on X, stacked by subcategory with aggregated values.",
+      "title": "Spotify Subscription Type by Gender",
+      "data": {
+        "values": [
+          {"category": "Male", "sub": "Free", "value": 659},
+          {"category": "Male", "sub": "Premium", "value": 725},
+          {"category": "Male", "sub": "Family", "value": 657},
+          {"category": "Male", "sub": "Student", "value": 650},
+          {"category": "Female", "sub": "Premium", "value": 701},
+          {"category": "Female", "sub": "Family", "value": 604},
+          {"category": "Female", "sub": "Free", "value": 687},
+          {"category": "Female", "sub": "Student", "value": 650},
+          {"category": "Other", "sub": "Premium", "value": 689},
+          {"category": "Other", "sub": "Family", "value": 647},
+          {"category": "Other", "sub": "Free", "value": 672},
+          {"category": "Other", "sub": "Student", "value": 642}
+        ]
+      },
+      "width": 480,
+      "height": 300,
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "axis": {"title": "Gender"}
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "value",
+          "type": "quantitative",
+          "axis": {"title": "Number of People"}
+        },
+        "color": {
+          "field": "sub",
+          "type": "nominal",
+          "legend": {"title": "Subscription Type"}
+        },
+        "order": {
+          "field": "sub",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {"field": "category", "type": "nominal"},
+          {"field": "sub", "type": "nominal"},
+          {"field": "value", "type": "quantitative"}
+        ]
+      }
+    };
+
+    vegaEmbed('#vis', spec);
+  </script>
+</body>
+</html>
