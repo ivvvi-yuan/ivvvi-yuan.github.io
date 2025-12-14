@@ -1,18 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ivy Yuan - Design Sprint #2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen | HCI Designer & Researcher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Ivy Yuan</h1>
-  <p>This is for Design Sprint 2.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AC</a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
 
-  <h2>Coursework</h2>
-  <ul>
-    <li><a href="Design-Sprint-2/Stacked_bar_chart/stacked_bar_chart.html">Analysis - Stacked Bar Chart</a></li>
-    <li><a href="Design-Sprint-2/Scatterplot/index.html">Analysis - Scatterplot</a></li>
-    <li><a href="Design-Sprint-2/Ridgeline/ridgeline_chart.html">Analysis - Ridgeline Diagram</a></li>
-  </ul>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h4 class="hero-subtitle">HCI Designer & Researcher</h4>
+                    <h1 class="hero-title">Crafting <span class="highlight">human-centered</span> digital experiences</h1>
+                    <p class="hero-description">I bridge the gap between people and technology through thoughtful design, rigorous research, and elegant interfaces.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="floating-shape shape-1"></div>
+                        <div class="floating-shape shape-2"></div>
+                        <div class="floating-shape shape-3"></div>
+                        <div class="hero-visual">
+                            <div class="visual-element element-1">
+                                <i class="fas fa-user-friends"></i>
+                                <span>User Research</span>
+                            </div>
+                            <div class="visual-element element-2">
+                                <i class="fas fa-pencil-ruler"></i>
+                                <span>UI/UX Design</span>
+                            </div>
+                            <div class="visual-element element-3">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-label">About Me</h4>
+                <h2 class="section-title">Designing with Purpose</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Human-Centered Design Philosophy</h3>
+                    <p>As an HCI designer, I believe that technology should serve people, not the other way around. My approach combines empathy, research, and aesthetics to create digital experiences that are both functional and delightful.</p>
+                    <p>Currently pursuing my Master's in Human-Computer Interaction at Stanford University, I specialize in creating interfaces that improve accessibility, enhance user satisfaction, and solve real-world problems.</p>
+                    
+                    <div class="education">
+                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                        <div class="education-item">
+                            <h5>M.S. Human-Computer Interaction</h5>
+                            <p class="education-school">Stanford University</p>
+                            <p class="education-details">Focus: UX Research, Interaction Design, Accessibility</p>
+                        </div>
+                        <div class="education-item">
+                            <h5>B.S. Cognitive Science</h5>
+                            <p class="education-school">University of California, Berkeley</p>
+                            <p class="education-details">Minor: Computer Science</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <h4>Core Competencies</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h5>User Research</h5>
+                            <p>Interviews, surveys, usability testing</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h5>UI/UX Design</h5>
+                            <p>Wireframing, prototyping, visual design</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h5>Frontend Development</h5>
+                            <p>HTML/CSS, JavaScript, React</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h5>Data Analysis</h5>
+                            <p>Statistics, A/B testing, metrics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-label">Portfolio</h4>
+                <h2 class="section-title">Design Sprints</h2>
+                <p class="section-subtitle">HCI projects facilitating problem-solving and design skills.</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/kandb.png" alt="Knotty&Board Website">
+                        <div class="project-overlay">
+                          <span class="project-category">Prototyping</span>
+                      </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Design for Dimensions</h3>
+                        <p class="project-description">This project involved redesigning a home furnishings website to create three distinct, user-centered experiences specifically optimized for a smartwatch, a laptop, and a large collaborative touch display.</p>
+                        <div class="project-tags">
+                            <span class="tag">Adaptive Design</span>
+                            <span class="tag">Multi-Device UX</span>
+                        </div>
+                        <a href="https://medium.com/@ivyuan_89714/design-for-dimensions-knotty-and-board-website-redesign-215a50242936" class="project-link" target="_blank">
+                          <i class="fas fa-arrow-right"></i> View Design Document on Medium
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/datavis.png" alt="Spotify User Data Visualization">
+                        <div class="project-overlay">
+                            <span class="project-category">Data Visualization</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Design for Understanding</h3>
+                        <p class="project-description">This project involved communicating information discovered in a dataset by creating two distinct visual experiences: one optimized for analytical clarity through a multi-chart dashboard, and another crafted for persuasive impact using creative narrative and visualization techniques.</p>
+                        <div class="project-tags">
+                            <span class="tag">Analytical Visualization</span>
+                            <span class="tag">Persuasive Visualization</span>
+                        </div>
+                        <a href="https://medium.com/@makwhite/1f09d4c8252b" class="project-link" target="_blank">
+                            <i class="fas fa-arrow-right"></i> View Design Document on Medium
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/vr.png" alt="Alien-dog finding VR game">
+                        <div class="project-overlay">
+                            <span class="project-category">Visual Reality</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Design for Another World</h3>
+                        <p class="project-description">This project involved designing immersive and interactive virtual reality experience to transport users to an imaginative world, allowing users to complete tasks that are impossible to accomplish in the real world.</p>
+                        <div class="project-tags">
+                            <span class="tag">VR</span>
+                            <span class="tag">Immersion & Interactivity</span>
+                            <span class="tag">Worldbuilding</span>
+                        </div>
+                        <a href="https://medium.com/@thompsontyler607/design-for-another-world-fetch-across-the-galaxy-e429b2d23d38" class="project-link" target="_blank">
+                          <i class="fas fa-arrow-right"></i> View Design Document on Medium
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                  <div class="project-image">
+                      <img src="images/kiosk.jpeg" alt="Kiosk Prototype">
+                      <div class="project-overlay">
+                          <span class="project-category">Physical Prototype</span>
+                      </div>
+                  </div>
+                  <div class="project-content">
+                      <h3>Re-design and Extend</h3>
+                      <p class="project-description">This project involved iterating and extending the design process of Design for Dimensions to create a tangible, physical prototype by synthesizing user feedback gathered previously.</p>
+                      <div class="project-tags">
+                          <span class="tag">User Testing</span>
+                          <span class="tag">Physical Prototyping</span>
+                          <span class="tag">Tangible UX</span>
+                      </div>
+                      <a href="https://medium.com/@jowhitehouse_64694/design-sprint-4-re-design-and-extend-09cffa3646fe?postPublishedType=initial" class="project-link" target="_blank">
+                        <i class="fas fa-arrow-right"></i> View Design Document on Medium
+                    </a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-label">Methodology</h4>
+                <h2 class="section-title">My Design Process</h2>
+                <p class="section-subtitle">A systematic approach to creating meaningful digital experiences</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discover</h3>
+                        <p>Conduct user research, stakeholder interviews, and competitive analysis to understand user needs and business goals.</p>
+                        <ul class="step-tools">
+                            <li>User Interviews</li>
+                            <li>Surveys</li>
+                            <li>Personas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Define</h3>
+                        <p>Synthesize research findings to define problem statements, user journeys, and design requirements.</p>
+                        <ul class="step-tools">
+                            <li>Journey Mapping</li>
+                            <li>Problem Framing</li>
+                            <li>Requirements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Design</h3>
+                        <p>Create wireframes, prototypes, and visual designs that address user needs and business objectives.</p>
+                        <ul class="step-tools">
+                            <li>Wireframing</li>
+                            <li>Prototyping</li>
+                            <li>Visual Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Test & Iterate</h3>
+                        <p>Conduct usability testing, gather feedback, and refine designs based on user insights and data.</p>
+                        <ul class="step-tools">
+                            <li>Usability Testing</li>
+                            <li>A/B Testing</li>
+                            <li>Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-label">Get In Touch</h4>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Interested in collaboration or learning more about my work?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>alex.chen@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Stanford, CA • Open to remote</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Resume</h3>
+                            <p><a href="#" class="resume-link">Download PDF</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#" class="footer-logo">Alex Chen</a>
+                    <p class="footer-description">HCI Designer & Researcher creating meaningful digital experiences through human-centered design.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#process">Process</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Alex Chen. All rights reserved.</p>
+                <p>This portfolio is part of Stanford's HCI Design Program</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
