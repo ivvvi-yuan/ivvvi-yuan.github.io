@@ -907,3 +907,21 @@ section {
     }
 }
 
+.nav-header {
+    margin-right: auto;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.nav-subtitle {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 2px;
+}
